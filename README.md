@@ -79,11 +79,8 @@ php artisan key:generate
 docker-compose up -d
 
 # Rode as migrations dentro do container
-docker exec -it NOME_DO_CONTAINER_BACKEND php artisan migrate
+docker exec -it backend-1 php artisan migrate
 ```
-
-> Substitua `NOME_DO_CONTAINER_BACKEND` pelo nome correto do seu container Laravel (verifique com `docker ps`).
-
 ---
 
 ### 🖥️ 2. Rodar o frontend
